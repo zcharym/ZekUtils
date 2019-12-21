@@ -4,7 +4,8 @@
  * @param {number} num number of indents
  * @returns {string} a customed size of indents
  */
- module.exports.makeIndention = (size=4, num=1)=> {
+export const makeIndention = (size=4, num=1)=> {
+     //repeat(0) --> ''
     let indent = ' '.repeat(size);
     return indent.repeat(num);
 }
