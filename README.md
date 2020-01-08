@@ -6,6 +6,12 @@ Tools that can increase you productivity and have fun.
 
 > Check [git repo](https://github.com/Zach-Ma/ZekUtils) if you are interested.
 
+## todo
+
+- [ ] Webpack it.
+- [ ] add more basic array implementation.
+- [ ] add ds and algorithms implementation.
+
 ## Special thanks
 
 - [lodash](https://github.com/lodash/lodash)
