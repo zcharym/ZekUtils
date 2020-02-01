@@ -4,10 +4,19 @@
  * @param func remove func
  */
 export function removeWithFunc(arr: any[], func): any[] {
-    Array.isArray(arr)
-        ? arr.filter(func).reduce((acc, val) => {
-            arr.splice(arr.indexOf(val), 1);
-            return acc.concat(val);
-        }, [])
-        : [];
+  return Array.isArray(arr)
+    ? arr.filter(func).reduce((acc, val) => {
+      arr.splice(arr.indexOf(val), 1);
+      return acc.concat(val);
+    }, [])
+    : [];
+}
+
+/**
+ * select random item in the array.
+ * @param arr input arr
+ * @returns a random item
+ */
+export function randomSelect(arr: any[]): any[] {
+  return arr[arr.length * Math.random() | 0]
 }
