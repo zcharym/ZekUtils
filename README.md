@@ -1,5 +1,7 @@
 # ZekUtils
 
+[![Run on Repl.it](https://repl.it/badge/github/Zach-Ma/ZekUtils)](https://repl.it/github/Zach-Ma/ZekUtils)
+
 > Current status: initialization
 
 Tools that can increase you productivity and have fun.
