@@ -18,5 +18,5 @@ export function removeWithFunc(arr: any[], func): any[] {
  * @returns a random item
  */
 export function randomSelect(arr: any[]): any[] {
-  return arr[arr.length * Math.random() | 0]
+  return arr[arr.length * Math.random() | 0] // `|0` floor it
 }
