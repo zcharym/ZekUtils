@@ -1,4 +1,7 @@
 export class LinkedList {
+  private count: number;
+  private head;
+
   constructor() {
     this.count = 0;
     this.head = null;
@@ -8,7 +11,7 @@ export class LinkedList {
    * 向链表中添加元素（只能从头按指针方向开始遍历至末尾添加）
    * @param {*} element input element
    */
-  push (element) {
+  push(element) {
     const node = new Node(element);
     let current = null;
     if (this.head == null) {
@@ -24,44 +27,52 @@ export class LinkedList {
   }
 
 
-  indexOf (element) {
+  indexOf(element) {
+    let arr = [];
+    while(this.head !== null){
+
+    }
+  }
+
+  getElementAt(index) {
 
   }
 
-  getElementAt (index) {
+  insert(element, index) {
 
   }
 
-  insert (element, index) {
+  remove(element):LinkedList {
+    const node = new Node(element);
+    while(this.head !==null){
 
+      
+    }
+    return
   }
 
-  remove (element) {
-
-  }
-
-  removeAt (element) {
+  removeAt(index) {
 
   }
 
   /**
    * @returns 返回链表长度
    */
-  size () {
+  size() {
     return this.count;
   }
 
   /**
    * @returns 返回头节点
    */
-  getHead () {
+  getHead() {
     return this.head;
   }
 
   /**
    * 清空链表
    */
-  clear () {
+  clear() {
     this.head = null;
     this.count = 0;
   }
@@ -69,28 +80,34 @@ export class LinkedList {
   /**
    * 判空
    */
-  isEmpty () {
-    return this.size === 0;
+  isEmpty() {
+    return this.count === 0;
   }
 
 }
 
 
 export class Node {
+  public _element;
+  public _next;
+
   constructor(elem) {
-    this.element = elem;
-    this.next = null
+    this._element = elem;
+    this._next = null
   }
 
-  toString () {
-    return `${this.element}`
+  toString() {
+    return `${this._element}`
   }
 }
 
-export class extends Node {
+export class DulNode extends Node {
+  public _next
+  public _prev;
+
   constructor(elem, next, prev) {
     super(elem);
-    this.next = next;
-    this.prev = prev;
+    this._next = next;
+    this._prev = prev;
   }
 }
