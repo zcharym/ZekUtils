@@ -26,34 +26,22 @@ export class LinkedList {
     this.count++;
   }
 
-
   indexOf(element) {
     let arr = [];
-    while(this.head !== null){
-
-    }
+    while (this.head !== null) {}
   }
 
-  getElementAt(index) {
+  getElementAt(index) {}
 
-  }
+  insert(element, index) {}
 
-  insert(element, index) {
-
-  }
-
-  remove(element):LinkedList {
+  remove(element): LinkedList {
     const node = new Node(element);
-    while(this.head !==null){
-
-      
-    }
-    return
+    while (this.head !== null) {}
+    return;
   }
 
-  removeAt(index) {
-
-  }
+  removeAt(index) {}
 
   /**
    * @returns 返回链表长度
@@ -83,9 +71,7 @@ export class LinkedList {
   isEmpty() {
     return this.count === 0;
   }
-
 }
-
 
 export class Node {
   public _element;
@@ -93,16 +79,16 @@ export class Node {
 
   constructor(elem) {
     this._element = elem;
-    this._next = null
+    this._next = null;
   }
 
   toString() {
-    return `${this._element}`
+    return `${this._element}`;
   }
 }
 
 export class DulNode extends Node {
-  public _next
+  public _next;
   public _prev;
 
   constructor(elem, next, prev) {
