@@ -75,7 +75,6 @@ module.exports = {
     ],
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/naming-convention': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
@@ -205,10 +204,5 @@ module.exports = {
     ],
     'use-isnan': 'error',
     'valid-typeof': 'off',
-    // angular codelyzer 配置
-    // "use-lifecycle-interface": "error",
-    // "no-inputs-metadata-property": "error",
-    // "no-outputs-metadata-property": "error",
-    // "no-host-metadata-property": "off"
   },
 };

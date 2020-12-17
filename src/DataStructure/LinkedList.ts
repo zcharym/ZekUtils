@@ -1,6 +1,22 @@
+import { NodeType } from '../type/ds.type';
+
+export class Node {
+  private _value: NodeType;
+  private _next: Node | null;
+
+  constructor(value: NodeType) {
+    this._value = value;
+    this._next = null;
+  }
+
+  toString(): string {
+    return `${this._value}`;
+  }
+}
+
 export class LinkedList {
   private count: number;
-  private head;
+  private head: Node;
 
   constructor() {
     this.count = 0;
@@ -9,9 +25,10 @@ export class LinkedList {
 
   /**
    * 向链表中添加元素（只能从头按指针方向开始遍历至末尾添加）
-   * @param {*} element input element
+   *
+   * @param  element input element
    */
-  push(element) {
+  push(element: NodeType): void {
     const node = new Node(element);
     let current = null;
     if (this.head == null) {
@@ -27,7 +44,7 @@ export class LinkedList {
   }
 
   indexOf(element) {
-    let arr = [];
+    const arr = [];
     while (this.head !== null) {}
   }
 
@@ -73,26 +90,11 @@ export class LinkedList {
   }
 }
 
-export class Node {
-  public _element;
-  public _next;
-
-  constructor(elem) {
-    this._element = elem;
-    this._next = null;
-  }
-
-  toString() {
-    return `${this._element}`;
-  }
-}
-
-export class DulNode extends Node {
-  public _next;
-  public _prev;
+export class DulNode {
+  private _next;
+  private _prev;
 
   constructor(elem, next, prev) {
-    super(elem);
     this._next = next;
     this._prev = prev;
   }
