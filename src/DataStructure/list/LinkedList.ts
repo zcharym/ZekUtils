@@ -1,4 +1,4 @@
-import { NodeType } from '../type/ds.type';
+import { NodeType } from '../../type/ds.type';
 
 export class Node {
   private _value: NodeType;
